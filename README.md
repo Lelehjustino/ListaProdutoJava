@@ -33,7 +33,6 @@ lista/
 ├── src/
 │   ├── model/
 │   │   ├── Produto.java
-│   │   └── ProdutoModel.java
 │   ├── view/
 │   │   └── ProdutoView.java
 │   ├── controller/
