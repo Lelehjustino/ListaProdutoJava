@@ -9,12 +9,17 @@ public class ProdutoView {
 
     private Scanner scanner = new Scanner(System.in);
 
+    
     public int exibirMenu() {
         System.out.println("\n=== LISTA DE PRODUTOS ===");
         System.out.println("1 - Cadastrar produto");
         System.out.println("2 - Listar produtos");
         System.out.println("0 - Sair");
-        System.out.print("Escolha uma opção: ");
+        System.out.print("Escolha uma opcao: ");
+
+        if (!scanner.hasNextLine()) {
+            return 0;
+        }
 
         String entrada = scanner.nextLine();
 
@@ -31,7 +36,7 @@ public class ProdutoView {
     }
 
     public double solicitarPreco() {
-        System.out.print("Preço do produto: ");
+        System.out.print("Preco do produto: ");
         return Double.parseDouble(
             scanner.nextLine().replace(",", ".")
         );
@@ -52,7 +57,7 @@ public class ProdutoView {
 
         for (Produto produto : produtos) {
             System.out.printf(
-                "Nome: %s | Preço: R$ %.2f | Estoque: %d%n",
+                "Nome: %s | Preco: R$ %.2f | Estoque: %d%n",
                 produto.getNome(),
                 produto.getPreco(),
                 produto.getEstoque()

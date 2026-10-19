@@ -1,4 +1,4 @@
-import model.ProdutoModel;
+import model.Produto;
 import view.ProdutoView;
 import controller.ProdutoController;
 
@@ -6,7 +6,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        ProdutoModel model = new ProdutoModel();
+        Produto model = new Produto();
         ProdutoView view = new ProdutoView();
 
         ProdutoController controller =

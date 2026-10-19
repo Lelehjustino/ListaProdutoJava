@@ -1,16 +1,16 @@
+
 package controller;
 
 import model.Produto;
-import model.ProdutoModel;
 import view.ProdutoView;
 
 public class ProdutoController {
 
-    private ProdutoModel model;
+    private Produto model;
     private ProdutoView view;
 
     public ProdutoController(
-            ProdutoModel model,
+            Produto model,
             ProdutoView view) {
         this.model = model;
         this.view = view;
