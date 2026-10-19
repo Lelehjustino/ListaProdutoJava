@@ -9,8 +9,7 @@ public class App {
         Produto model = new Produto();
         ProdutoView view = new ProdutoView();
 
-        ProdutoController controller =
-            new ProdutoController(model, view);
+        ProdutoController controller = new ProdutoController(model, view);
 
         controller.iniciar();
     }

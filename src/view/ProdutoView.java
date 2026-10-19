@@ -8,7 +8,6 @@ import model.Produto;
 public class ProdutoView {
 
     private Scanner scanner = new Scanner(System.in);
-
     
     public int exibirMenu() {
         System.out.println("\n=== LISTA DE PRODUTOS ===");
